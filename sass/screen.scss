@@ -89,6 +89,7 @@ h2 {
     z-index: 1;
     padding: 1em 1em 1em 7em;
     border-bottom: 1px solid $gray;
+    min-height: 4em;
     .date {
         position: absolute;
         background: $green;
