@@ -1,5 +1,5 @@
-@import "normalize";
 @import "bourbon";
+@import "normalize";
 
 $blue:      #2c3e50;
 $white:     #ffffff;
@@ -48,7 +48,6 @@ a {
 #previous,
 #next {
     position: absolute;
-    top: 50%;
     margin-top: -0.5em;
     z-index: 11;
     color: $white;
