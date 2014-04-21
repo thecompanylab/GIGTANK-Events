@@ -353,7 +353,7 @@ th {
   padding: 0; }
 
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   body:before {
     position: fixed;
     top: 0;
@@ -389,7 +389,6 @@ a {
 #previous,
 #next {
   position: absolute;
-  top: 50%;
   margin-top: -0.5em;
   z-index: 11;
   color: white; }

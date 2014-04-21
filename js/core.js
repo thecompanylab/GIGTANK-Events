@@ -6,7 +6,7 @@
     var
     body    =   document.body,
     cal     =   document.getElementById('calendar'),
-    feed    =   'https://www.google.com/calendar/feeds/4qc3thgj9ocunpfist563utr6g@group.calendar.google.com/public/full',
+    feed    =   'https://www.google.com/calendar/feeds/colab.is_e8j6lol84qm1l3h6thgjro4ui8@group.calendar.google.com/public/full',
     service,
     months  =   [
         'January',
