@@ -1,0 +1,41 @@
+---
+layout: default
+title: GIGTANK Announcements 
+---
+
+        <header id="hd">
+        <a href="./" title="{{ page.title }}" id="brand">{{ page.title }}</a>
+        </header>
+
+        <main id="blasts">
+            <noscript>
+                Sorry, you need JavaScript to view this page
+            </noscript>
+        </main>
+
+        <script type="text/mustache" id="template">
+        {% raw %}
+            {{#blasts.length}}
+            <ul id="announcements" class="no-bullet" class="vcal">
+                {{#blasts}}
+                <li>
+                    <time class="block">
+                        <span class="day"> {{ day }}</span>
+                        <span class="date">{{ month }} {{ date }} </span> 
+                        <span class="time"> {{ time }}</span>
+                    </time>
+                    <div class="notes">{{{ body }}}</div>
+                </li>
+                {{/blasts}}
+            </ul>
+            {{/blasts.length}}
+            {{^blasts.length}}
+            <p class="no-events">There are no updates at this time.</p>
+            {{/blasts.length}}
+        {% endraw %}
+        </script>
+        <script src="http://www.google.com/jsapi"></script>
+        <script src="js/core.min.js"></script>
+        <script type="text/javascript">
+            displayBlasts();
+        </script>

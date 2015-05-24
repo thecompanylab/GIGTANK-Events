@@ -9,7 +9,11 @@ module.exports = function(grunt) {
           separator: ';'
         },
         src: [
+          'js/domready.js',
+          'js/blasts.js',
           'js/core.js',
+          'js/chabus.js',
+          'js/viewcal.js',
           'js/mustache.js'
         ],
         dest: 'js/core.min.js'
@@ -37,7 +41,7 @@ module.exports = function(grunt) {
     },
     watch: {
       js: {
-        files: ['js/core.js'],
+        files: ['js/core.js', 'js/chabus.js', 'js/viewcal.js'],
         tasks: ['concat:js', 'uglify:js'],
         options: {
           livereload: true,

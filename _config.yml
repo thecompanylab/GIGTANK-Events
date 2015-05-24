@@ -1,3 +1,3 @@
-name: GIGTANK Events List
+name: GIGTANK Lead Mentors
 markdown: redcarpet
-pygments: true
+highlighter: true
