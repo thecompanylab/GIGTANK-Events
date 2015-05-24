@@ -3,7 +3,7 @@ function httpGet(theUrl) {
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false );
     xmlHttp.send( null );
-    
+
     return xmlHttp.responseText;
 }
 function setupContacts(group, url) {
@@ -21,7 +21,7 @@ function setupMentors() {
     setupContacts("mentors", "/gt14lm");
 }
 function setupTechMentors() {
-    setupContacts("mentors", "gt15/techmentors");
+    setupContacts("mentors", "http://gtc.colab.co/gt15/techmentors");
 }
 function setupStaff() {
     setupContacts("staff", "/gt14st");
